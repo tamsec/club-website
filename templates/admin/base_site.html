@@ -1,0 +1,17 @@
+{% extends 'admin/base.html' %}
+
+{% load static %}
+
+{% block extrahead %}
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+{% endblock %}
+
+{% block extrastyle %}
+  <link rel="stylesheet" href="{% static 'css/admin.css' %}">
+{% endblock %}
+
+{% block branding %}
+  <h1>
+    Texas A&M Cybersecurity Club Admin
+  </h1>
+{% endblock %}
