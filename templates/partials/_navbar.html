@@ -1,0 +1,73 @@
+{% load static %}
+<!-- Navigation -->
+<nav 
+	{% if '/' == request.path %}
+		class="navbar navbar-expand-lg fixed-top"
+	{% else %}
+		class="navbar navbar-expand-lg static-top bg-black"
+	{% endif %}
+>
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#home"></a>
+		<div class="h4 text-white text-capitalized text-center">
+			<span class="text-maroon">Tamu</span> Cyber<span class="text-maroon">security</span> Club
+		</div>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+					<a 
+					{% if '/' == request.path %}
+						class="nav-link active" 
+					{% else %}
+						class="nav-link" 
+					{% endif %}
+					href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="nav-item">
+					<a 
+						{% if 'about' in request.path %}
+							class="nav-link active" 
+						{% else %}
+							class="nav-link" 
+						{% endif %}
+					href="{% url 'about' %}">About</a>
+        </li>
+        <li class="nav-item">
+					<a
+						{% if 'calander' in request.path %}
+							class="nav-link active" 
+						{% else %}
+							class="nav-link" 
+						{% endif %}
+					href="{% url 'calander' %}">Calander</a>
+        </li>
+        <li class="nav-item">
+					<a
+						{% if 'events' in request.path %}
+							class="nav-link active" 
+						{% else %}
+							class="nav-link" 
+						{% endif %}
+					 href="{% url 'events' %}">Events</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="{# url 'resources' %}">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{# url 'partners' %}">Partners</a>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Register</a>
+        </li> -->
+        <!-- <li class="nav-item">
+					<a class="nav-link" href="#">Login</a>
+        </li> -->
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- End Navigation -->

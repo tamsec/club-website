@@ -1,0 +1,285 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} | Welcome {% endblock%}
+
+{% block content %}
+
+	<!-- Section 2 - Club info -->	
+	<div id="features" class="offset container my-4">
+		<div class="os-animation animated fadeInUp" data-animation="fadeInUp">
+			<div class="row text-center justify-content-center">
+				<div class="col-lg-10 col-xl-9">
+					<h1 class="text-dark">Interested in Cybersecurity?</h1>
+					<div class="title-underline"></div>
+					<h4>
+						Texas A&M Cybersecurity Club is an organization for people interested in learning practical skills and knowledge in the cybersecurity field. 
+						Whether you are new or a veteran, our community of students welcomes all skill levels.
+					</h4>
+				</div>
+			</div> 
+		</div> 
+	</div> 
+	<!-- End Section 2 -->	
+
+	<!-- Section 3 -->	
+	<div class="container">
+		<!-- 3 column about club -->
+		<div class="row">
+			<!-- Meetings -->
+			<div class="col-md-4">
+				<div class="os-animation" data-animation="fadeInLeft">
+					<div class="image-scale">
+						<div class="image-scale-img text-center">
+							<img src="{% static 'img/home/cyberclubLogo.png' %}" alt="#" height="200px">
+						</div>
+						<div class="text-center">
+						<h4 class="my-4 text-dark">Weekly Meetings</h4>
+						<h4>Come join us Tuesdays and Thursdays at ETB 1005 at 5:30 pm for our weekly meetings. Join our mailing list to get the latest update or check the calender</h4>
+						<a class="btn btn-outline-dark btn-sm" href="calander.html">Calander</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Meetings -->
+			<!-- Discord -->
+			<div class="col-md-4">
+				<div class="os-animation" data-animation="fadeInUp">
+					<div class="image-scale">
+						<div class="image-scale-img text-center">
+							<img src="{% static 'img/home/discord.jpeg' %}" alt="#" height="200px">
+						</div>
+						<div class="text-center">
+							<h4 class="my-4 text-dark">Discord</h4>
+							<h4 class="mx-3">Stay connected with the members in the club and activities on discord.</h4>
+							<a class="btn btn-outline-dark btn-sm" href="#">Join</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Discord -->
+			<!-- Compete -->
+			<div class="col-md-4">
+				<div class="os-animation" data-animation="fadeInRight">
+					<div class="image-scale">
+						<div class="image-scale-img text-center">
+							<img src="{% static 'img/home/Icons_CTF.png' %}" alt="#" height="200px">
+						</div>
+						<div class="text-center">
+							<h4 class="my-4 text-dark">Compete</h4>
+							<h4 class="mx-3">There are several opportunities year-round to compete with a team or individually.
+								Check out the events page for future opportunities.
+							</h4>
+							<a class="btn btn-outline-dark btn-sm" href="#">Events</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Compete -->
+		</div>
+		<!-- End 3 column about club -->
+	</div>
+	<!-- End Section 3 -->	
+
+	<!-- Newsletter Signup -->
+	<div class="bg-light-gray os-animation py-3" data-animation="fadeInUp">
+		<form id="mailing-list" action="" method="post" target="_blank">
+			<div class="container">
+				<div class="row d-flex justify-content-center align-items-center">
+					<div class="col-md-12 col-lg-12 col-xl-5 p-0 my-1 text-center">
+						<h5 class="text-dark">Subscribe to our mailing list for lastest updates!</h5>
+					</div>
+						<div class="col-sm-6 col-md-5 col-lg-5 col-xl-4 p-0 my-1">
+							<div class="form-group">
+									<input type="email" class="form-control" required="required" name="EMAIL" id="mce-EMAIL" placeholder="Email Address">
+							</div>
+						</div>
+						<div class="col-lg-3 col-xl-2 text-center mb-3">
+							<button type="submit" class="btn btn-outline-dark btn-xl" data-toggle="modal" data-target="#success">Subscribe<i class="far fa-paper-plane ml-1"></i></button>
+						</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- End Newsletter Signup -->
+
+	<!-- Topic Covered Title -->
+	<div class="container mt-1">
+		<div class="os-animation" data-animation="fadeInUp">
+			<div class="row text-center justify-content-center">
+				<div class="col-lg-10 col-xl-9">
+					<h1 class="text-dark">Topics We Cover</h1>
+					<div class="title-underline"></div>
+					<h4 class="mb-5">For upcoming topics in the next meeting, please visit our <a class="maroon-link" href="#">calander</a>.</h1>
+				</div>
+			</div>
+			<!-- End Row -->
+		</div> 
+	</div> 
+	<!-- End Topic Covered Title -->
+
+	<!-- Topic Covered -->
+	<div class="container mb-3">
+		<div class="os-animation" data-animation="fadeInUp">
+			<div class="row d-flex justify-content-center text-center">
+				<!-- Cryptography -->
+				<div class="col-sm-6 col-md-4 mb-3">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="p-0">
+							<span class="fa-stack fa-2x">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<i class="fas fa-lock fa-inverse fa-stack-1x"></i>
+							</span>
+						</div>
+						<div class="w-100"></div>
+						<div class="p-0">
+							<h4 class="text-dark text-uppercase">Cryptography</h4>
+						</div>
+					</div>
+				</div>
+
+					<!-- <div class="os-animation" data-animation="fadeInUp"> -->
+				<!-- Hack the Box -->
+				<div class="col-sm-6 col-md-4 mb-3">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="p-0">
+							<span class="fa-stack fa-2x">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<i class="fas fa-cube fa-inverse fa-stack-1x"></i>
+							</span>
+						</div>
+						<div class="w-100"></div>
+						<div class="p-0">
+							<h4 class="text-dark text-uppercase"> Hack the Box</h4>
+						</div>
+					</div>
+				</div>
+
+				<!-- Password Cracking -->
+				<div class="col-sm-6 col-md-4 mb-3">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="p-0">
+							<span class="fa-stack fa-2x">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<i class="fas fa-lock-open fa-inverse fa-stack-1x"></i>
+							</span>
+						</div>
+						<div class="w-100"></div>
+						<div class="p-0">
+							<h4 class="text-dark text-uppercase">Password Cracking</h4>
+						</div>
+					</div>
+				</div>
+
+				<!-- Network Traffic Analysis -->
+				<div class="col-sm-6 col-md-4 mb-3">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="p-0">
+							<span class="fa-stack fa-2x">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<i class="fas fa-network-wired fa-inverse fa-stack-1x"></i>
+							</span>
+						</div>
+						<div class="w-100"></div>
+						<div class="p-0">
+							<h4 class="text-dark text-uppercase">Network Traffic Analysis</h4>
+						</div>
+					</div>
+				</div>
+
+				<!-- Web Application Exploitation -->
+				<div class="col-sm-6 col-md-4 mb-3">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="p-0">
+							<span class="fa-stack fa-2x">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<i class="fas fa-server fa-inverse fa-stack-1x"></i>
+							</span>
+						</div>
+						<div class="w-100"></div>
+						<div class="p-0">
+							<h4 class="text-dark text-uppercase">Web Application Exploitation</h4>
+						</div>
+					</div>
+				</div>
+
+				<!-- Careers and Interviews -->
+				<div class="col-sm-6 col-md-4 mb-3">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="p-0">
+							<span class="fa-stack fa-2x">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<i class="far fa-file fa-inverse fa-stack-1x"></i>
+							</span>
+						</div>
+						<div class="w-100"></div>
+						<div class="p-0">
+							<h4 class="text-dark text-uppercase">Careers and Interviews</h4>
+						</div>
+					</div>
+				</div>
+			</div> 
+			<!--- End Row -->
+		</div>
+	</div>
+	<!-- End Topic Covered -->
+  <style>
+    .twitter a:hover {
+      color:#00acee;
+    }
+    .facebook a:hover {
+      color:#4267B2;
+    }
+    .linkedin a:hover {
+      color:#0e76a8;
+    }
+    .discord a:hover {
+      color:#7289da;
+    }
+  </style>
+	<!-- Last Section -->
+	<div id="contact">
+		<div class="container-fluid footer px-0">
+			<div class="row bg-dark">
+				<div class="container">
+					<div class="row py-3 d-flex align-items-top">
+						<!-- Social Links-->
+						<div class="col-md-5 px-0 pr-md-3">
+							<div class="h3 text-center text-white mb-4"> Stay Connected</div>
+								<div class="row d-flex justify-content-center text-center">
+									<div class="twitter col-sm col-md-5 col-lg-4 mb-2"><a href="https://twitter.com/tamucybersec/" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a></div>
+									<div class="col-sm col-md-5 col-lg-4 mb-2"><a href="https://github.com/tamsec" target="_blank"><i class="fab fa-github-square fa-3x"></i></a></div>
+									<div class="discord col-sm col-md-5 col-lg-4 mb-2"><a href="https://discord.gg/GUEkgD/" target="_blank"><i class="fab fa-discord fa-3x"></i></a></div>
+									<div class="facebook col-sm col-md-5 col-lg-4 mb-2"><a href="https://www.facebook.com/TAMUCyberSec/" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a></div>
+									<div class="linkedin col-sm col-md-5 col-lg-4 mb-2"><a href="https://www.linkedin.com/school/tamucybersecuritycenter/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></div>
+								</div>
+						</div> 
+						<!-- End Social Links-->
+
+						<!-- Contact Form -->
+						<div class="col-md-7 px-3 pl-md-3">
+							<h3 class="m-0 mb-1 text-capitalize text-white">Contact Us</h3>
+							<form id="contact-form" method="POST" action="contact/contact.php">
+								<div class="messages"></div>
+								<div class="controls">
+									<div class="form-group mb-2">
+										<input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your name." required="required">
+									</div>
+									<div class="form-group mb-2">
+										<input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your email." required="required">
+									</div>
+									<div class="form-group mb-2">
+										<textarea id="form_message" name="message" class="form-control" placeholder="Add your message." rows="4" required="required"></textarea>
+									</div>
+									<input type="submit" class="btn btn-light m-0" value="Send message">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div> 
+			</div> 
+		</div> 
+	</div>
+	<!-- End Last Section -->
+{% endblock %}

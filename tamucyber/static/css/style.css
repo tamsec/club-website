@@ -1,0 +1,338 @@
+/*-- Prevent Horizontal Scrolling & Font Style --*/
+html, body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+}
+
+/*-- Particles --*/
+#particles-js {
+  background: black;
+  height: 100vh;
+}
+
+.bg-black {
+  background: black;
+}
+
+/*-- Text Colors --*/
+.text-maroon {
+  color: #800;
+}
+
+.text-black {
+  color: #000;
+}
+
+/*-- Title Underline --*/
+.title-underline {
+  margin: 1rem auto 1.5rem;
+  width: 9rem;
+  height: .1rem;
+  background-color: #d3d3d3;
+}
+.title-underline:after {
+  position: absolute;
+  margin: 0 auto;
+  height: .2rem;
+  width: 2rem;
+  margin-left: -1rem;
+  content: "";
+  background-color: #800000;
+}
+
+.event-attr-title {
+  color: white;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.border-maroon {
+    margin: 0 auto;
+    border-top: .3rem solid #800;
+}
+.border-maroon-left {
+    margin: 0;
+    border-top: .3rem solid #800;
+}
+
+/*-- Newsletter Sytles --*/
+.bg-light-gray {
+  background-color: #f2f2f2;
+}
+.border-bottom {
+  border-bottom: 1px solid #dee2e6!important;
+}
+.form-group {
+  color: black;
+  margin: 0;
+}
+.form-control {
+  background-color: white!important;
+  color: black!important;
+}
+.form-control:focus {
+  background: white!important;
+  color: black!important;
+}
+
+/*-- Social Media About --*/
+.social-media {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+ul.social-media li {
+  display: inline;
+  margin: 0 7px;
+}
+
+/*-- Nav Scrolling Offset --*/
+.offset:before {
+  content: "";
+  display: block;
+  height: 4.05rem;
+  margin-top: -4.05rem;
+}
+
+/*-- Remove Blue Browser Outline Around Elements --*/
+a:active, a:focus,
+button:active, button:focus,
+textarea:hover, textarea:active, textarea:focus,
+input:hover, input:active, input:focus,
+#lightbox:active, #lightbox:focus {
+  outline: 0 !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+/*-- Maroon Links --*/
+a:hover.maroon-link, a.maroon-link {
+  color: #800;
+}
+
+/*-- Pointer Cursor On Links & Buttons --*/
+a, .btn, button {
+   cursor: pointer!important;
+}
+
+/*============= NAVIGATION =============*/
+
+.navbar {
+  font-size: 1em;
+  font-weight: 7000;
+  letter-spacing: .05rem;
+}
+.navbar-brand img {
+  height: 2rem;
+}
+
+.navbar-title {
+  font-size: 2rem;
+}
+
+.custom-toggler-icon {
+  color: white;
+  font-size: 1.6rem;
+}
+.navbar-nav li {
+  padding-right: .8rem;
+}
+.navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem;
+  /* transition: all .4s ease; */
+  transition: all .0s ease;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #800;
+  transition: all .4s ease;
+}
+.navbar.solid,
+.navbar.solid-toggle {
+  background: black;
+  transition: background-color 1s ease 0s;
+}
+
+/*============= LANDING PAGE =============*/
+
+/*-- Landing Page Caption --*/
+.caption {
+  width: 100vw;
+  position: absolute;
+  top: 35%;
+  z-index: 1;
+}
+
+.caption h1 {
+  font-size: 6rem;
+  letter-spacing: .3rem;
+  padding-bottom: .5rem;
+}
+
+.caption h3 {
+  font-size: 4.5rem;
+  padding-bottom: 2rem;
+}
+
+.home-shadow-maroon {
+  text-shadow: 3px 4px 4px #800;
+}
+
+.home-shadow-white {
+  text-shadow: 2px 3px 2px #F8F8FF;
+}
+
+/*-- Bouncing Down Arrow --*/
+.arrow {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+}
+a.down-arrow {
+  color: white;
+  font-size: 2.5rem;
+}
+
+a.down-arrow:hover {
+  color: #800;
+}
+
+/*============= FEATURES SECTION =============*/
+
+.btn-sm {
+  border-width: medium;
+  border-radius: 0;
+  padding: .5rem 1.1rem;
+  font-size: .9rem;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+.card {
+  height: 100%;
+  border-radius: 15px;
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(.95);
+}
+
+/*============= CONTACT SECTION =============*/
+
+.footer {
+}
+
+.footer .row.outer {
+  background-color: rgba(57, 63, 70, 0.85);
+  padding: 1rem 2rem 3rem;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: black;
+}
+
+/*-- Contact Form --*/
+
+.form-group {
+  margin-bottom: 1.3rem;
+}
+
+.form-control {
+  background-color: #53595f;
+  border-radius: 0;
+  border: .15rem solid #666b71;
+  color: white!important;
+  font-size: 1.1rem;
+}
+
+.form-control:focus {
+  background: #53595f;
+  border: .15rem solid #93979b;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #b2b5b8!important;
+}
+
+input.btn {
+  cursor: pointer;
+}
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 992px (lg) */
+@media (max-width: 991.98px) {
+  .caption h1 {
+    font-size: 6rem;
+    letter-spacing: .2rem;
+    padding-bottom: .6rem;
+  }
+  .caption h3 {
+    font-size: 4rem;
+    padding-bottom: 1.7rem;
+  }
+}
+
+/* Md devices - under 768px */
+@media (max-width: 767.98px) {
+  .caption h1 {
+    font-size: 5rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+  .caption h3 {
+    font-size: 3rem;
+    padding-bottom: 1.2rem;
+  }
+}
+
+/* Sm devices - under 576px */
+@media (max-width: 575.98px) {
+  .caption {
+    top: 30%;
+  }
+  .caption h1 {
+    font-size: 5em;
+    letter-spacing: .1rem;
+    padding-bottom: .5rem;
+  }
+  .caption h3 {
+    font-size: 2.7rem;
+    padding-bottom: .5rem;
+  }
+}
+
+/*============= WAYPOINTS =============*/
+
+
+/*--- Prevent WayPoints from Browser Window Scrolling On Mobile --*/
+/* Devices under 768px (md) */
+@media (max-width: 767px) {
+  .row {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
+
+/*-- Require for waypoint to work --*/
+.os-animation{
+  opacity: 0;
+  margin: 0!important;
+  max-width: 100%;
+}
+.os-animation.animated {
+  opacity: 1;
+}

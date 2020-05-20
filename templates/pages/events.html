@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} | Events {% endblock %}
+
+{% block content %}
+<!-- Event Start 3 Logos -->
+<div class="container">
+  <div class="row os-animation" data-animation="fadeInDown">
+    <h2 class="w-100 font-weight-bold text-dark text-center mt-3" style="letter-spacing: .5px;">Events and Competitions</h2>
+    <hr class="w-25 border-maroon mb-4">
+  </div>
+  <div class="row d-flex justify-content-around text-center">
+    <!-- Collaborate animation-->
+    <div class="col-md-5 col-lg-3 mt-3">
+      <div class="os-animation bg-dark px-4 py-2 m-2 shadow-lg" data-animation="fadeInLeft" style="border-radius: 10px;">
+        <i class="fas fa-users fa-5x" style="color:white"></i>
+        <div class="event-attr-title">
+          Collaborate
+        </div>
+        <div>
+        </div>
+      </div> 
+    </div>
+    <!-- Compete animation-->
+    <div class="col-md-5 col-lg-3 mt-3">
+      <div class="os-animation bg-dark px-4 py-2 m-2 shadow-lg" data-animation="fadeInUp" style="border-radius: 10px;">
+        <i class="fas fa-trophy fa-5x" style="color:white;"></i> 
+        <div class="event-attr-title">
+          Compete
+        </div>
+      </div> 
+    </div> 
+    <!-- Problem solve animation -->
+    <div class="col-md-5 col-lg-3 mt-3">
+      <div class="os-animation bg-dark px-4 py-2 my-2 shadow-lg" data-animation="fadeInRight" style="border-radius: 10px;">
+        <i class="fas fa-unlock fa-5x" style="color:white;"></i>
+        <div class="event-attr-title">
+          Problem Solve
+        </div>
+      </div> 
+    </div> 
+  </div>
+</div>
+<!-- End 3 Logos -->
+
+<!-- Start Competitions -->
+<div id="competitions" class="container-fluid" style="margin-top: 20px;">
+  <div class="row">
+    <div class="col-12">
+      <div class="os-animation event-type-title" data-animation="fadeInUp">
+        <h2 class="w-100 font-weight-bold text-dark display-4 mx-3" style="letter-spacing: .5px;">
+          Competitions
+          <hr class="border-maroon-left">
+        </h2>
+      </div> 
+    </div>
+  </div>
+  <!-- Start Capture the Flag Competitions-->
+  <div class="row mx-5">
+    <div class="os-animation col-12 mt-3" data-animation="fadeInLeft">
+      <div class="h1 text-black font-weight-bold ml-3 mt-2"><u>Capture the Flag</u></div>
+    </div>
+
+    <!-- Two Column Section -->
+    <div class="row px-4">
+
+      <div class="col-md-5 my-auto text-center">
+        <div class="os-animation" data-animation="fadeInLeft">
+          <img class="img-fluid" src="{% static 'pages/img/logos/tamu_ctf.png' %}" alt=""/>
+        </div> 
+      </div> 
+
+      <div class="col-md-7 my-auto">
+        <div class="os-animation" data-animation="fadeInRight">
+          <h4 class="py-2 text-left">Texas A&M Capture the Flag</h4>
+          <p class="lead pt-2">
+            "TAMUctf is a jeopardy style cybersecurity capture the flag competition built and ran by fellow Texas A&M Students. 
+            The competition has been designed to have challenges accessible to newer players as well ones that will keep more experienced players busy. 
+            So if you are just getting into cybersecurity or have been playing CTFs for a while, TAMUctf will be a great opportunity to learn new cybersecurity skills!"
+            <p>
+          <h5>Find out more at the <a class="maroon-link" href="https://cybersecurity.tamu.edu/event/tamuctf/" target="_blank">tamuctf webpage</a></h5>
+        </div>
+      </div>
+
+    </div>
+    <!-- End Two Column Section --> 
+
+    <!-- Two Column Section -->
+    <div class="row px-4">
+
+      <div class="col-md-5 my-auto">
+        <div class="os-animation" data-animation="fadeInLeft">
+          <h4 class="py-2 text-left">National Cyber League</h4>
+          <p class="lead pt-2">
+            The National Cyber League (NCL) is a great CTF competition for students who have never competed in a CTF competition or have found other competitions too challenging. 
+            The competition lasts around a month and consists of an open gym, preseason, individual game, and team game. 
+            The gymnasium is designed to prepare participants and give examples on how to solve challenges throughout the competition. 
+            In each skills section in the competition, the challenges start easy and get progressively harder. 
+            The competition does cost to register but in the past, the club has provided a limited amount of game codes to a register for free.
+          </p>
+          <h5>Find out more at the <a class="maroon-link" href="https://cyberskyline.com/events/ncl/info" target="_blank">NCL info webpage</a></h5>
+          
+        </div> 
+      </div> 
+
+      <div class="col-md-7 my-auto text-center">
+        <div class="os-animation" data-animation="fadeInRight">
+          <img class="round" src="{% static 'pages/img/logos/NCL-logo.png' %}" alt=""/>
+        </div>
+      </div>
+    </div>
+    <!-- End Two Column Section -->
+  </div>
+  <!-- End Capture the Flag Competitions-->
+
+  <!-- BLUE TEAM COMPETITIONS -->
+  <div class="row mx-5">
+    <div class="os-animation col-12 mt-5" data-animation="fadeInLeft">
+      <div class="h1 text-black font-weight-bold ml-3 mt-2"><u>Blue Team Focused</u></div>
+    </div>
+
+    <!-- Two Column Section -->
+    <div class="row px-4">
+
+      <div class="col-md-5 my-auto text-center">
+        <div class="os-animation" data-animation="fadeInLeft">
+          <img class="img-fluid" src="{% static 'pages/img/logos/sw-ccdc-logo.png' %}" width="400" alt=""/>
+        </div>
+      </div>
+
+      <div class="col-md-7 my-auto">
+        <div class="os-animation" data-animation="fadeInRight">
+          <h4 class="py-2 text-left">Collegiate Cyber Defense Competition</h4>
+          <p class="lead pt-2">
+            "CCDC is a competition for college students that exercises both technical and business skills. 
+            CCDC focuses on the operational aspects of managing and protecting an existing simulated corporate network infrastructure. 
+            Your team will be securing, managing, and maintaining a small business network – responding to business tasks called injects 
+            while a live Red Team that is attempting to break into your systems, and maintaining a core group of “critical services” for the simulated business."
+          <p>
+          <h5>Find out more about the regional competiton at <a class="maroon-link" href="https://southwestccdc.com/about/" target="_blank">Southwest CCDC webpage</a></h5>
+          <h5>Find out more about the national competiton at <a class="maroon-link" href="https://www.nationalccdc.org/" target="_blank">NCCDC webpage</a></h5>
+        </div>
+      </div> 
+
+    </div>
+    <!-- End Two Column Section --> 
+
+    <!-- Two Column Section -->
+    <div class="row px-4">
+
+      <div class="col-md-5 my-auto">
+        <div class="os-animation" data-animation="fadeInLeft">
+          <h4 class="py-2 text-left">CyberForce</h4>
+          <p class="lead pt-2">
+          "Unfilled cybersecurity careers will reach over 1.5 million by 2019. With the ever-increasing amount of technology placed on the internet, security becomes a high priority. 
+          The Department of Energy (DOE), capitalizing on the expertise of current national laboratory staff that previously hosted four successful cyber defense competitions to 
+          exercise interactive, scenario-based events, where teams engage in cybersecurity activities includes methods, practices, strategy, policy, and ethics. 
+          Through the CyberForce Competition™, DOE has worked to increase 1) hands-on cyber education to college students and professionals, 2) awareness into 
+          the critical infrastructure and cyber security nexus,  and  3)  basic  understanding  of  cyber  security  within  a  real  world scenario."
+          </p>
+          <h5>Find out more at the <a class="maroon-link" href="https://cyberforcecompetition.com/" target="_blank">NCL info webpage</a></h5>
+          
+        </div> 
+      </div>
+
+      <div class="col-md-7 my-auto text-center">
+        <div class="os-animation" data-animation="fadeInRight">
+          <img class="round" src="{% static 'pages/img/logos/Cyber-Force-logo.png' %}" width="500" alt=""/>
+        </div>
+      </div>
+
+    </div>
+    <!-- End Two Column Section -->
+  </div>
+  <!-- END BLUE TEAM COMPETITIONS -->
+</div>
+<!-- End Competitions -->
+
+{% endblock %}

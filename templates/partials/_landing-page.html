@@ -1,0 +1,34 @@
+{% load static %}
+<!-- Landing Page Background w/ Particles JS -->
+<div id = "particles-js" class="landing"></div>
+<!-- End Landing Page Background -->
+
+<!-- Landing Page Title -->
+<div class="caption text-center text-light text-uppercase">
+	<div id="home-title">
+		<h1 class="font-weight-bold os-animation home-shadow-maroon" data-animation="bounceInDown">
+			Texas <span class="home-shadow-white text-maroon">A</span>&<span class="home-shadow-white text-maroon">M</span>
+		</h1>
+	</div>
+	<div id="home-title-caption">
+		<h3 class="animated homeFadeInUp home-shadow-maroon">Cybersecurity Club<h3>
+	</div>
+</div>
+<!-- End Landing Page Title -->
+
+
+<!-- Particles JS  https://github.com/VincentGarreau/particles.js -->
+<script src="{% static 'js/particles.min.js' %}"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
+<script>
+	particlesJS.load('particles-js', "{% static 'json/particles.json' %}", function() {
+	});
+</script>
+
+<!-- Bouncing Down Arrow -->
+<a href="#features" class="down-arrow text-center">
+	<div class="arrow d-none d-md-block">
+			<i class="fas fa-angle-down" aria-hidden="true"></i>
+	</div>
+</a>
+<!-- End Bouncing Down Arrow -->
