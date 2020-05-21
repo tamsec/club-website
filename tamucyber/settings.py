@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     'pages.apps.PagesConfig',
+    'accounts.apps.AccountsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -75,12 +76,16 @@ WSGI_APPLICATION = 'tamucyber.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': config.db,
-        'NAME': config.db_name,
-        'USER': config.db_user,
-        'PASSWORD': config.db_password,
-        'HOST': config.db_host 
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+    # 'default': {
+    #     'ENGINE': config.db,
+    #     'NAME': config.db_name,
+    #     'USER': config.db_user,
+    #     'PASSWORD': config.db_password,
+    #     'HOST': config.db_host 
+    # }
 }
 
 

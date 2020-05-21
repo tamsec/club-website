@@ -1,3 +1,13 @@
+
+/*========== FOOTER DYNAMIC YEAR ==========*/
+const date = new Date();
+$('.year').html(date.getFullYear());
+
+/*-- FADE OUT ALERT MESSAGES --*/
+setTimeout(function() {
+  $('#message').fadeOut('slow');
+}, 3000);
+
 /*========== NAVBAR TRANSPARENT TO SOLID ==========*/
 $(document).ready(function () { //when document(DOM) loads completely
   checkScroll(); //check if page is scrolled

@@ -15,6 +15,11 @@ html, body {
   background: black;
 }
 
+/*-- Calender --*/
+.calender {
+  height: 90vh;
+}
+
 /*-- Text Colors --*/
 .text-maroon {
   color: #800;
@@ -72,7 +77,7 @@ html, body {
   color: black!important;
 }
 .form-control:focus {
-  background: white!important;
+  /* background: white!important; */
   color: black!important;
 }
 
@@ -220,7 +225,7 @@ a.down-arrow:hover {
   text-align: center;
 }
 
-.card:hover {
+.card:hover.about {
   transform: scale(.95);
 }
 
@@ -249,10 +254,9 @@ a.down-arrow:hover {
 }
 
 .form-control {
-  background-color: #53595f;
+  background-color: white!important;
   border-radius: 0;
   border: .15rem solid #666b71;
-  color: white!important;
   font-size: 1.1rem;
 }
 
@@ -352,4 +356,34 @@ input.btn {
 
 .homeFadeInUp {
   animation-name: homeFadeInUp;
+}
+
+a .fa-linkedin.about {
+  /* color: #00A0DC; */
+  color:#0077B5;
+}
+a:hover .fa-linkedin.about {
+  color: #0054B5;
+}
+a .fa-github-square.about {
+  color:#211F1F
+}
+a:hover .fa-github-square.about {
+  color: black;
+}
+
+a .fa-envelope.about {
+  color: darkslategrey;
+}
+
+a:hover .fa-envelope.about {
+  color: black;
+}
+
+a .fa-link.about {
+  color: grey;
+}
+
+a:hover .fa-link.about {
+  color: darkslategrey;
 }

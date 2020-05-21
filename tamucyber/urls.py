@@ -13,5 +13,6 @@ except ImportError:
 
 urlpatterns = [
     path('', include('pages.urls')),
+    path('accounts/', include('accounts.urls')),
     path(config.admin_url, admin.site.urls),
 ]
