@@ -6,8 +6,8 @@ def index(request):
 def about(request):
   return render(request, 'pages/about.html')
 
-def calander(request):
-  return render(request, 'pages/calander.html')
+def calendar(request):
+  return render(request, 'pages/calendar.html')
 
 def events(request):
   return render(request, 'pages/events.html')

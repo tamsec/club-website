@@ -3,6 +3,8 @@ html, body {
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
   color: #505962;
+  /* color: white; */
+  background: #181a1b;
 }
 
 /*-- Particles --*/
@@ -15,14 +17,16 @@ html, body {
   background: black;
 }
 
-/*-- Calender --*/
-.calender {
+/*-- Calendar --*/
+.calendar {
   height: 90vh;
 }
 
 /*-- Text Colors --*/
 .text-maroon {
-  color: #800;
+  /* color: #ff7a7a; */
+  /* color: #de3c3c; */
+  color:#bf2121;
 }
 
 .text-black {
@@ -43,7 +47,7 @@ html, body {
   width: 2rem;
   margin-left: -1rem;
   content: "";
-  background-color: #800000;
+  background-color: #bf2121;
 }
 
 .event-attr-title {
@@ -54,11 +58,11 @@ html, body {
 
 .border-maroon {
     margin: 0 auto;
-    border-top: .3rem solid #800;
+    border-top: .3rem solid #bf2121;
 }
 .border-maroon-left {
     margin: 0;
-    border-top: .3rem solid #800;
+    border-top: .3rem solid #bf2121;
 }
 
 /*-- Newsletter Sytles --*/
@@ -114,7 +118,8 @@ input:hover, input:active, input:focus,
 
 /*-- Maroon Links --*/
 a:hover.maroon-link, a.maroon-link {
-  color: #800;
+  /* color: #bf2121; */
+  color: #de3c3c;
 }
 
 /*-- Pointer Cursor On Links & Buttons --*/
@@ -152,7 +157,8 @@ a, .btn, button {
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  color: #800;
+  color: #de3c3c;
+  /* color: #bf2121; */
   transition: all .4s ease;
 }
 .navbar.solid,
@@ -183,7 +189,7 @@ a, .btn, button {
 }
 
 .home-shadow-maroon {
-  text-shadow: 3px 4px 4px #800;
+  text-shadow: 3px 4px 4px #bf2121;
 }
 
 .home-shadow-white {
@@ -204,7 +210,7 @@ a.down-arrow {
 }
 
 a.down-arrow:hover {
-  color: #800;
+  color: #bf2121;
 }
 
 /*============= FEATURES SECTION =============*/
