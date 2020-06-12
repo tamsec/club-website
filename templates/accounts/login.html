@@ -3,7 +3,12 @@
 {% block title %} | Account Login {% endblock %}
 
 {% block content %}
-<section id="login" class="bg-light py-5" style="min-height: 90vh;">
+<style>
+    body {
+        color: #505962;
+    }
+</style>
+<section id="login" class="py-5" style="min-height: 90vh;">
     <div class="container">
         <div class="row">
             <div class="col-md-6 mx-auto">
@@ -32,7 +37,7 @@
                             <input type="submit" value="Login" class="btn btn-secondary btn-block">
                         </form>
                         <div class="text-right mt-2">
-                          <a href="{% url 'register' %}" class="card-link"><u>Create an account</u></a>
+                          Don't have an account? <a href="{% url 'register' %}" class="card-link"><u>Sign Up</u></a>
                         </div> 
 
                     </div>

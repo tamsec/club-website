@@ -11,3 +11,12 @@ def calendar(request):
 
 def events(request):
   return render(request, 'pages/events.html')
+
+def wicys(request):
+  return render(request, 'pages/wicys.html')
+
+def redhat(request):
+  return render(request, 'pages/redhat-academy.html')
+
+def login(request):
+  return render(request, 'pages/login.html')

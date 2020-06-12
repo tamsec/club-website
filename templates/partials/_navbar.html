@@ -55,23 +55,60 @@
 					 href="{% url 'events' %}">Events</a>
         </li>
         <!-- <li class="nav-item">
-          <a class="nav-link" href="{# url 'resources' %}">Resources</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{# url 'partners' %}">Partners</a>
-        </li> -->
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Register</a>
-        </li> -->
-        <!-- <li class="nav-item">
 					<a 
-						{# if 'login' in request.path %}
+						{# if 'partners' in request.path %}
 							class="nav-link active" 
 						{# else %}
 							class="nav-link" 
 						{# endif %}
-					href="{# url 'login' %}">Login</a>
+					href="{# url 'partners' %}">Partners</a>
+				</li> -->
+				<style>
+					.dropdown {
+						margin-top: 14px;
+					}
+					li a {
+						color: white;
+					}
+					li a:hover {
+						color: #de3c3c;
+						text-decoration: none;
+					}
+					.dropdown-menu {
+						background-color: rgba(255, 255, 255, .3);
+						padding: .5rem 3px;
+					}
+					.dropdown-toggle::after {
+						display: inline-block;
+						margin-left: .255em;
+						vertical-align: .1em;
+						content: "";
+						border-top: .3em solid;
+						border-right: .3em solid transparent;
+						border-bottom: 0;
+						border-left: .3em solid transparent;
+					}
+				</style>
+				<li class="nav-item dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="">
+						Partners<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="{% url 'wicys' %}">WiCyS</a></li>
+						<li><a href="{% url 'redhat' %}">Red Hat Academy</a></li>
+					</ul>
+				</li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="{# url 'resources' %}">Resources</a>
         </li> -->
+        <li class="nav-item">
+					<a 
+						{% if 'login' in request.path %}
+							class="nav-link active" 
+						{% else %}
+							class="nav-link" 
+						{% endif %}
+					href="{% url 'login' %}">Login</a>
+        </li>
 			</ul>
 		</div>
 	</div>

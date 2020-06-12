@@ -24,8 +24,9 @@ html, body {
 
 /*-- Text Colors --*/
 .text-maroon {
-  /* color: #ff7a7a; */
-  /* color: #de3c3c; */
+  color:#bf2121;
+}
+.text-maroon:hover {
   color:#bf2121;
 }
 
@@ -146,30 +147,34 @@ a, .btn, button {
   color: white;
   font-size: 1.6rem;
 }
-.navbar-nav li {
-  padding-right: .8rem;
+
+.navbar .nav-item:not(:last-child) {
+  margin-right: 35px;
 }
+
 .navbar-nav .nav-link {
   color: white;
-  padding-top: .8rem;
-  /* transition: all .4s ease; */
-  transition: all .0s ease;
+  font-size: 20px;
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   color: #de3c3c;
-  /* color: #bf2121; */
   transition: all .4s ease;
 }
 .navbar.solid,
 .navbar.solid-toggle {
   background: black;
-  transition: background-color 1s ease 0s;
+  transition: background-color .5s ease 0s;
 }
 
-.dropdown-menu.show {
-    display: block;
-    margin-top: 10px;
+.navbar-nav li:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-item:focus {
+  outline:0 !important;
+  background: transparent;
+  color: black;
 }
 /*============= LANDING PAGE =============*/
 
@@ -239,9 +244,6 @@ a.down-arrow:hover {
 }
 
 /*============= CONTACT SECTION =============*/
-
-.footer {
-}
 
 .footer .row.outer {
   background-color: rgba(57, 63, 70, 0.85);
@@ -395,4 +397,25 @@ a .fa-link.about {
 
 a:hover .fa-link.about {
   color: darkslategrey;
+}
+
+/* == CALNADER ===*/
+/* http://themeloom.com/2013/02/tips-embed-google-maps-and-calendars-in-a-responsive-wordpress-theme/ */
+/* Responsive iFrame */
+.responsive-iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
