@@ -42,7 +42,7 @@
           <a class="nav-link nav-link-fade-up px-0" href="./calendar.html">Calendar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-fade-up nav-link-fade-up-active px-0" href="./events.html">Events</a>
+          <a class="nav-link nav-link-fade-up px-0" href="./events.html">Events</a>
         </li>
         <li class="nav-item">
           <a class="nav-link nav-link-fade-up px-0" href="./partners.html">Partners</a>
@@ -51,119 +51,47 @@
           <a class="nav-link nav-link-fade-up px-0" href="./contact.html">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-fade-up px-0" href="./login.html">Login</a>
+          <a class="nav-link nav-link-fade-up nav-link-fade-up-active px-0" href="./login.html">Login</a>
         </li>
       </ul>
     </div>
   </nav>
-	<!-- End Navigation -->
+  <!-- End Navigation -->
 
-  <!-- Event Start 3 Logos -->
-  <div class="container text-white text-center inconsolata-font">
-    <div class="row animated fadeInDown mt-3">
+  <!-- https://startbootstrap.com/snippets/login/ -->
+  <div class="container" style="min-height: 100vh;">
+    <div class="row text-center animated fadeInUp mt-3">
       <div class="col-12">
-        <h1 class="text-white" style="letter-spacing: .5px;">Events & Competitions</h1>
-        <hr class="border-maroon mb-4 events-title-underline">
+        <h1 class="text-white inconsolata-font" style="letter-spacing: .5px;">Sign In</h1>
       </div>
     </div>
-    <div class="row d-flex justify-content-around text-center">
-      <!-- Collaborate animation-->
-      <div class="col-md-5 col-lg-3 mt-3">
-        <div class="bg-dark px-4 py-2 m-2 shadow-lg animated fadeInLeft" style="border-radius: 10px;">
-          <i class="fas fa-users fa-5x" style="color:white"></i>
-          <h3>Collaborate</h3>
-          <div>
-          </div>
-        </div> 
-      </div>
-      <!-- Compete animation-->
-      <div class="col-md-5 col-lg-3 mt-3">
-        <div class="bg-dark px-4 py-2 m-2 shadow-lg animated fadeInUp" style="border-radius: 10px;">
-          <i class="fas fa-trophy fa-5x" style="color:white;"></i> 
-          <h3>Compete<h3>
-        </div> 
-      </div> 
-      <!-- Problem solve animation -->
-      <div class="col-md-5 col-lg-3 mt-3">
-        <div class="bg-dark px-4 py-2 my-2 shadow-lg animated fadeInRight" style="border-radius: 10px;">
-          <i class="fas fa-unlock fa-5x" style="color:white;"></i>
-          <h3> Problem Solve</h3>
-        </div> 
-      </div> 
-    </div>
-  </div>
-  <!-- End 3 Logos -->
-
-
-  <div id="competitions" class="container-fluid text-white inconsolata-font" style="margin-top: 20px;">
-
-      <!-- Two Column Section -->
-      <div class="row px-4 justify-content-center">
-        <div class="col-md-3 my-auto text-center">
-          <div class="animated fadeInLeft">
-            <img class="img-fluid" src="./img/events/tamu_ctf.png" alt=""/>
-          </div> 
-        </div> 
-        <div class="col-md-5 my-auto">
-          <div class="animated fadeInRight event-description-right">
-            <h1 class="py-2">Texas A&M Capture the Flag</h1>
-            <h5>Find out more at the <a class="maroon-link" href="https://cybersecurity.tamu.edu/event/tamuctf/" target="_blank">tamuctf webpage</a>. (CTF Competition)</h5>
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin">
+          <div class="card-body">
+            <!-- <h5 class="card-title text-center">Sign In</h5> -->
+            <form class="form-signin">
+              <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+              <hr class="my-4">
+              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
+            </form>
+            <div class="row mt-3 justify-content-between mx-1">
+              <div class="d-inline h6"><a href="#" target="blank" style="text-decoration: none;"> Create Account</a></div>
+              <div class="d-inline h6"><a href="#" target="blank" style="text-decoration: none;"> Forgot Password?</a></div>
+            </div>
           </div>
         </div>
       </div>
-
-      <hr size="25" noshade> 
-      <div class="row px-4 mt-4 justify-content-center">
-        <div class="col-md-5 my-auto">
-          <div class="animated fadeInLeft event-description-left">
-            <h1 class="py-2">National Cyber League</h1>
-            <h5>Find out more at the <a class="maroon-link" href="https://cyberskyline.com/events/ncl/info" target="_blank">NCL info webpage</a>. (CTF Competition)</h5>
-          </div>
-        </div>
-        <div class="col-md-3 my-auto text-center">
-          <div class="animated fadeInRight">
-            <img class="img-fluid" width="200px" src="./img/events/NCL-logo.png" alt=""/>
-          </div> 
-        </div> 
-      </div>
-
-      <hr size="25" noshade> 
-      <div class="row px-4 mt-4 justify-content-center">
-        <div class="col-md-3 my-auto event-description-left">
-          <div class="animated fadeInLeft">
-            <img class="img-fluid" src="./img/events/sw-ccdc-logo.png" width="200px" alt=""/>
-          </div> 
-        </div> 
-        <div class="col-md-6 my-auto event-description-right">
-          <div class="animated fadeInRight">
-            <h1 class="py-2 text">Collegiate Cyber Defense Competition (Blue Team Competition)</h1>
-            <h5>Find out more about the regional competiton at <a class="maroon-link" href="https://southwestccdc.com/about/" target="_blank">Southwest CCDC webpage</a></h5>
-            <h5>Find out more about the national competiton at <a class="maroon-link" href="https://www.nationalccdc.org/" target="_blank">NCCDC webpage</a></h5>
-          </div>
-        </div>
-      </div>
-
-      <hr size="25" noshade> 
-      <div class="row px-4 mt-4 justify-content-center">
-        <div class="col-md-6 my-auto">
-          <div class="animated fadeInLeft event-description-left">
-            <h1 class="py-2">CyberForce (Blue Team Competition)</h1>
-            <h5>Find out more at the <a class="maroon-link" href="https://cyberforcecompetition.com/" target="_blank">CyberForce info webpage</a></h5>
-            <h5>2019 team <a class="maroon-link" href="https://engineering.tamu.edu/news/2019/12/texas-am-student-team-shines-in-doe-cyberforce-competition.html" target="_blank">article</a></h5>
-          </div>
-        </div>
-        <div class="col-md-3 my-auto text-center">
-          <div class="animated fadeInRight">
-            <img class="img-fluid" width="400px" src="./img/events/Cyber-Force-logo.png" alt=""/>
-          </div> 
-        </div> 
-      </div>
-      <!-- End Two Column Section --> 
     </div>
   </div>
-
-
-
 
   <!-- Footer -->
   <footer class="footer bg-black mt-3">

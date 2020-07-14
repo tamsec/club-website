@@ -24,3 +24,5 @@ venv
 
 # setting.py config
 config.py
+
+.vscode/
