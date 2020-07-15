@@ -52,15 +52,19 @@ body {
   width: 100%;
   overflow-x: hidden;
   background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 7%, rgba(28,23,23,1) 11%,rgba(41,41,41,1) 14%);
-
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(4,3,5,1) 90px, rgba(10,10,10,1) 110px, rgba(20,20,20,1) 130px,rgba(30,30,30,1) 150px
+  , rgba(40,40,40,1) 170px, rgba(50,50,50,1) 190px, rgba(60,60,60,1) 230px);
   margin: 0;
   padding: 0;
 }
 
 /*=========== GLOBAL ==============*/
 a, a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
+}
+.simple-link {
+  text-decoration: none !important;
+  color: #000;
 }
 
 /*-- Fonts --*/
@@ -80,22 +84,22 @@ a, a:hover {
 .linkedin a,
 .discord a,
 .github a {
-  color:#fff;
+  color: #fff;
 }
 .twitter a:hover {
-  color:#00acee;
+  color: #00acee;
 }
 .facebook a:hover {
-  color:#4267B2;
+  color: #4267B2;
 }
 .linkedin a:hover {
-  color:#0e76a8;
+  color: #0e76a8;
 }
 .discord a:hover {
-  color:#7289da;
+  color: #7289da;
 }
 .github a:hover {
-  color:#fff;
+  color: #fff;
   opacity: .9;
 }
 
@@ -148,6 +152,10 @@ a:hover.maroon-link {
     margin: 0 auto;
     border-top: .3rem solid #bf2121;
 }
+.border-purple {
+    margin: 0 auto;
+    border-top: .3rem solid #812990;
+}
 
 /*============NAVBAR===============*/
 .navbar {
@@ -192,14 +200,14 @@ a:hover.maroon-link {
   opacity: 1;
 }
 .navbar .navbar-brand {
-  width:70px;
-  padding:0;
-  margin:0;
+  width: 70px;
+  padding: 0;
+  margin: 0;
 }
 .navbar .navbar-brand-title {
   color: #fff;
-  font-size:43px;
-  font-weight:500;
+  font-size: 43px;
+  font-weight: 500;
 }
 
 /*============LANDING PAGE===============*/
@@ -259,13 +267,13 @@ ul.social-media li {
   margin: 0 7px;
 }
 a .fa-linkedin.about {
-  color:#0077B5;
+  color: #0077B5;
 }
 a:hover .fa-linkedin.about {
   color: #0054B5;
 }
 a .fa-github-square.about {
-  color:#211F1F
+  color: #211F1F
 }
 a:hover .fa-github-square.about {
   color: black;
@@ -308,7 +316,7 @@ a:hover .fa-link.about {
   text-align: left;
 }
 .event-description-left {
-  text-align:right;
+  text-align: right;
 }
 .events-title-underline {
   width: 440px;
@@ -331,7 +339,6 @@ a:hover .fa-link.about {
 
 /*============= REDHAT PAGE =============*/
 
-
 /*============= WICYS PAGE =============*/
 
 /*============= LOGIN PAGE =============*/
@@ -341,6 +348,14 @@ a:hover .fa-link.about {
 }
 .btn-google:hover {
   background: rgb(225, 98, 89) !important;
+}
+.accounts a {
+  color: #fff;
+  text-decoration: none;
+}
+.accounts a:hover {
+  color: #3590ae;
+  text-decoration: none;
 }
 
 /*============= MEDIA QUERIES =============*/
@@ -367,20 +382,16 @@ a:hover .fa-link.about {
   .navbar {
     background: #000;
     text-align: center;
-    /* z-index: 9999; */
   }
-
   .navbar .navbar-brand, .navbar .nav-link {
     color: #fff;
     text-align: left;
   }
-
   .nav-link-fade-up::before {
     width: 100px;
     bottom: 4px;
     opacity: 0;
   }
-
   .nav-link-fade-up-active:before {
     bottom: 10px;
     opacity: 1;
@@ -398,7 +409,6 @@ a:hover .fa-link.about {
   .navbar .navbar-brand-title {
     display: none !important;
   }
-
   .caption {
     top: 25%;
   }
@@ -413,13 +423,13 @@ a:hover .fa-link.about {
   }
 
   /* make all horizontal fadeIn up on mobile */
+  .fadeInUp {
+    animation-name: fadeInUp !important;
+  }
   .fadeInLeft {
     animation-name: fadeInUp !important;
   }
   .fadeInRight {
-    animation-name: fadeInUp !important;
-  }
-  .fadeInUp {
     animation-name: fadeInUp !important;
   }
 }

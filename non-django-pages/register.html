@@ -41,7 +41,7 @@
           <a class="nav-link nav-link-fade-up px-0" href="./events.html">Events</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-fade-up nav-link-fade-up-active px-0" href="./partners.html">Partners</a>
+          <a class="nav-link nav-link-fade-up px-0" href="./partners.html">Partners</a>
         </li>
         <li class="nav-item">
           <a class="nav-link nav-link-fade-up px-0" href="./contact.html">Contact</a>
@@ -52,85 +52,44 @@
       </ul>
     </div>
   </nav>
-	<!-- End Navigation -->
+  <!-- End Navigation -->
 
-  <div class="container text-center inconsolata-font" style="min-height:100vh">
-    <div class="row animated fadeInDown mt-3">
+  <!-- https://startbootstrap.com/snippets/login/ -->
+  <div class="container" style="min-height:100vh;">
+    <div class="row text-center animated fadeInUp mt-3">
       <div class="col-12">
-        <h1 class="text-white" style="letter-spacing:.5px;">Parterned With</h1>
-        <hr class="border-maroon mb-4 events-title-underline">
+        <h1 class="text-white inconsolata-font" style="letter-spacing:.5px;">Register</h1>
       </div>
     </div>
-    <div class="row d-flex roboto-font">
-      <div class="col-xs-12 col-md-6 animated fadeInLeft">
-        <a href="#">
-          <div class="card card-partners-left">
-            <div class="card-partners-img">
-                <img src="./img/partners/redhat/redhat_academy.png" width="200px">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin text-white" style="background:#000;">
+          <div class="card-body">
+            <form class="form-signin">
+              <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword">Confirm Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password Confirmation" required>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Create Account</button>
+              <hr class="my-4" style="background:#fff">
+              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
+            </form>
+            <div class="row mt-3 mx-1 accounts">
+              Already have an account?<div class="d-inline ml-2 font-weight-bold"><a href="./login.html" target="blank">Login</a></div>
+              <!-- <div class="d-inline h6"><a href="#" target="blank"> Forgot Password?</a></div> -->
             </div>
-          <h3 class="card-title text-center font-weight-bold simple-link">Red Hat Academy</h3>
-          </div> 
-        </a>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <a href="./wicys.html"> 
-          <div class="card card-partners-right animated fadeInRight">
-            <div class="card-partners-img">
-              <img src="./img/partners/wicys/wicys.png" width="200px">
-            </div>
-            <h3 class="card-title text-center font-weight-bold simple-link">Women in Cybersecurity</h3>
-          </div> 
-        </a>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- End Parnterned logos -->
-
-    <!-- Workshop Table -->
-    <div class="row text-center animated fadeInUp">
-      <div class="col-12">
-        <h1 class="text-white inconsolata-font" style="letter-spacing:.5px;">Workshops</h1>
-        <hr class="border-maroon mb-4" style="width:200px;">
-      </div>
-    </div>
-    <div class="row justify-content-center animated fadeInUp">
-      <div class="col-xs-12 col-lg-10 table-responsive">
-        <table class="table table-striped bg-light">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">No.</th>
-              <th scope="col">Workshop</th>
-              <th scope="col">Partner</th>
-              <th scope="col">Duration</th>
-              <th scope="col">Date</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>TBA</td>
-              <td>TBA</td>
-              <td>TBA</td>
-              <td>TBA</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>TBA</td>
-              <td>TBA</td>
-              <td>TBA</td>
-              <td>TBA</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>TBA</td>
-              <td>TBA</td>
-              <td>TBA</td>
-              <td>TBA</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <!-- End Workshop Table -->
   </div>
 
   <!-- Footer -->
